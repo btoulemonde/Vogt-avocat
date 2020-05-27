@@ -1,7 +1,18 @@
-.rotation90 {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
+.jumbotron {
+   background-image:
+ url('../../assets/image/cour2.png');
+   background-size: cover;
+   height: 100%;
+   width: 100%;
+
+
+  }
+  h5, h6{
+    font-family: Baskerville;
+    color: #1a4672;
+  }
+  .card{
+    background-color: rgba(190, 190, 190, 0.699);
+    width: 30rem;
+
+  }

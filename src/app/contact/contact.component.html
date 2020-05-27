@@ -1,42 +1,67 @@
 <div class="countainer-fluid mx-3 my-5">
   <div class="row justify-content-center mb-3">
     <div class="d-flex ">
-      <h3 >CONTACT</h3>
+      <h3>CONTACT</h3>
     </div>
   </div>
-  <form>
+  <form (ngSubmit)="sendEmail()" #etatForm="ngForm" class="was-validated">
     <div class="form-row  ">
       <div class="form-group  col-md-6  mx-auto">
-        <label for="nom">Nom</label>
-        <input type="text" class="form-control" id="nom">
+        <label for="nom">Nom *</label>
+        <input type="text" class=" form-control is-invalid" id="nom" name="nom" [(ngModel)]="user.nom"
+          #etatNom="ngModel" required>
+        <div class="invalid-feedback" *ngIf="etatNom.invalid ">le nom est obligatoire</div>
       </div>
 
       <div class="form-group col-md-6  mx-auto">
-        <label for="prenom">Prénom</label>
-        <input type="text" class="form-control" id="prenom">
+        <label for="prenom">Prénom *</label>
+        <input type="text" class="form-control is-invalid" name="prenom" [(ngModel)]="user.prenom" #etatprenom="ngModel"
+          required>
+        <div class="invalid-feedback" *ngIf="etatprenom.invalid ">le prénom est obligatoire</div>
       </div>
     </div>
     <div class="form-row">
 
       <div class="form-group  col-md-6  mx-auto">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email">
+        <label for="email">Email *</label>
+        <input type="email" class="form-control is-invalid" name="email" [(ngModel)]="user.email" #etatEmail="ngModel"
+          required email>
+        <div class="invalid-feedback" *ngIf="etatEmail.invalid ">l'email est obligatoire</div>
       </div>
       <div class="form-group col-md-6  mx-auto">
         <label for="telephone">Télephone</label>
-        <input type="number" class="form-control" id="telephone">
+        <input type="text" class="form-control " name="telephone" [(ngModel)]="user.telephone">
       </div>
     </div>
     <div class="form-row">
 
       <div class="form-group col-md-12  mx-auto">
-        <label for="message">Message</label>
-        <textarea type="text" class="form-control" id="message"></textarea>
+        <label for="message">Message *</label>
+        <textarea type="text" class="form-control is-invalid" name="message" [(ngModel)]="user.message"
+          #etatmessage="ngModel" required></textarea>
+        <div class="invalid-feedback" *ngIf="etatmessage.invalid">veillez saisir votre demande</div>
       </div>
     </div>
     <div class=" d-flex justify-content-center">
-      <button type="submit" class="btn btn-primary ">Envoyer</button>
+      <div *ngIf="err" class="text-danger text-center">
+        Oops, une erreur s'est produite, merci de renouveller l'opération
+      </div>
+
+      <div *ngIf="ok" class="alert alert-success" role="alert">
+        votre Message a bien été envoyé :)
+      </div>
+
     </div>
+    <ng-container *ngIf="!sending; else elseBlockLoading">
+
+      <div class=" d-flex justify-content-center">
+
+        <div>
+          <button class="btn btn-primary " type="submit" [disabled]="etatForm.invalid">Envoyer</button>
+        </div>
+
+      </div>
+    </ng-container>
   </form>
   <div class="row mx-auto my-3 d-flex justify-content-center">
     <iframe
@@ -45,3 +70,15 @@
       tabindex="0"></iframe>
   </div>
 </div>
+
+<ng-template #elseBlockLoading>
+  <div class=" d-flex justify-content-center">
+
+    <div>
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Loading...
+      </button>
+    </div>
+  </div>
+</ng-template>

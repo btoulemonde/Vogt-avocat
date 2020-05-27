@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -9,6 +11,8 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { FooterComponent } from './footer/footer.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import {CompetencesComponent} from './competences/competences.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const routes: Routes = [
@@ -33,7 +37,10 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgbModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
