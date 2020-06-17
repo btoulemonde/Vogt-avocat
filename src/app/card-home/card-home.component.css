@@ -1,0 +1,11 @@
+.card {
+  background-color: #245379a4;
+  border: 0ch;
+  cursor: pointer;
+
+}
+.card:hover {
+  background-color: #245379ee;
+}
+
+

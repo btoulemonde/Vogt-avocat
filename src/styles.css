@@ -42,6 +42,7 @@
 }
 
 html {
+  height: 100%;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -74,13 +75,19 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: Baskerville;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  text-align: justify;
+  font-family: Baskerville;
+  font-size: medium;
+
 }
 
 abbr[title],
@@ -105,6 +112,9 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: Baskerville;
+  text-justify: auto;
+  text-align: justify;
 }
 
 ol ol,
@@ -112,6 +122,8 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
+  font-family: Baskerville;
+  font-size: medium;
 }
 
 dt {
@@ -4267,7 +4279,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 2px solid #245379;
 }
 
 .nav-tabs .nav-item {
@@ -4285,16 +4297,16 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #7d6c6c;
   background-color: transparent;
   border-color: transparent;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  color: #000000;
+  background-color: #245379;
+  border-color: #245379;
 }
 
 .nav-tabs .dropdown-menu {
@@ -5270,7 +5282,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .jumbotron {
   padding: 2rem 1rem;
-
+  margin-bottom: 2rem;
   background-color: #6b818c9d;
   border-radius: 0.3rem;
 }
@@ -6788,7 +6800,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #1a4672 !important;
+  background-color: #245379 !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,

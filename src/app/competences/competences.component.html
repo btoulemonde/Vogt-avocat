@@ -1,35 +1,138 @@
-<div class="countainer-fluid mx-3 my-3">
+<div class="countainer-fluid  mx-3 my-3">
 
-  <ngb-accordion #acc="ngbAccordion">
-    <ngb-panel id="toggle-1" title="First panel">
-      <ng-template ngbPanelContent>
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-        officia
-        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-        tempor,
-        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-        helvetica,
-        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-        Leggings
-        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-        accusamus
-        labore sustainable VHS.
-      </ng-template>
-    </ngb-panel>
-    <ngb-panel id="toggle-2" title="Second">
-      <ng-template ngbPanelContent>
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-        officia
-        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-        tempor,
-        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-        helvetica,
-        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-        Leggings
-        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-        accusamus
-        labore sustainable VHS.
-      </ng-template>
-    </ngb-panel>
-  </ngb-accordion>
+  <div class="row justify-content-center mb-3">
+    <div class="d-flex ">
+      <h3 style="text-align: center; color:  #084b83;">Domaines d'interventions
+        <br />
+        <hr style="border-color: #084b83;width: 143px;border-bottom-width: 2px" />
+      </h3>
+    </div>
+  </div>
+
+  <div class="countainer-fluid mx-1">
+    <ul ngbNav #nav="ngbNav" [activeId]="active" class="nav-tabs">
+      <li [ngbNavItem]="1">
+        <a ngbNavLink>Droit de la réparation du dommage corporel</a>
+        <ng-template ngbNavContent>
+          <p class="mt-5 mx-5 in">
+            Si vous êtes victime d'une agression, d'un accident de la route, d'un accident domestique, d'un accident
+            du sport ou d'un accident médical, Maître Emilie VOGT œuvre pour que vous obteniez l'indemnisation intégrale
+            de vos préjudices.
+            <br /><br/>
+            Si vous avez déjà obtenu l'indemnisation de vos préjudices mais que vous souffrez d'une aggravation de votre
+            état de santé, Maître Emilie VOGT est à votre écoute pour vous accompagner dans les démarches en vue
+            d'obtenir
+            une nouvelle indemnisation.
+            <br/>
+          </p>
+          <ul class="mt-5 mx-5">
+            <li>
+              Assistance ou représentation des victimes d'infractions ou d'accidents en vue d'obtenir leur juste indemnisation dans le cadre d'un recours amiable ou contentieux devant les juridictions compétentes (tribunal correctionnel, tribunal judicaire, tribunal administratif)
+            </li>
+            <li>Intervention auprès des compagnies d'assurance</li>
+            <li>Intervention devant le Service d'Aide au Recouvrement des Victimes d'Infractions (SARVI), la Commission d'Indemnisation des Victimes d'Infractions (CIVI), la Commission de Conciliation et d'Indemnisation des Accidents Médicaux des Affections Iatrogènes et des Infections Nosocomiales (CCI) et l'Office National d'Indemnisation des Accidents Médicaux (ONIAM)</li>
+            <li>Assistance aux expertises médicales</li>
+            <li>Réouverture en cas d'aggravation</li>
+          </ul>
+
+
+
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="2">
+        <a ngbNavLink>Droit de la famille, des personnes et de l'enfant </a>
+        <ng-template ngbNavContent>
+          <p class="mt-5 mx-5">Si vous souhaitez un conseil ou que vous souhaitez engager une procédure amiable ou contentieuse ou bien qu'une action est diligentée à votre encontre devant le Juge aux affaires familiales (JAF), Maître Emilie VOGT est à votre écoute pour vous orienter et défendre vos intérêts.
+            <br/>
+          </p>
+            <ul class="mt-5 mx-5 in">
+              <li>Divorce (divorce par consentement mutuel, divorce par acte d'avocat, divorce pour acceptation du principe de la rupture, divorce pour faute, divorce pour altération définitive du lien conjugal)</li>
+              <li>Séparation de corps</li>
+              <li>Rupture de PACS</li>
+              <li>Annulation de mariage</li>
+              <li>Autorité parentale </li>
+              <li>Garde d'enfant</li>
+              <li>Droit de visite et d'hébergement des parents, des grands-parents, des beaux-parents …</li>
+              <li>Pension alimentaire </li>
+              <li>Devoir de secours</li>
+              <li>Contribution aux charges du mariage </li>
+              <li>Médiation</li>
+              <li>Action en recherche ou en contestation de paternité ou de maternité</li>
+              <li>Adoption</li>
+              <li>Retrait ou délégation d'exercice de l'autorité parentale</li>
+              <li>Délaissement</li>
+              <li>Changement de sexe</li>
+              <li>Changement de nom, changement de prénom</li>
+              <li>Protection du conjoint victime de violences conjugales</li>
+              <li>Tutelle, curatelle </li>
+            </ul>
+
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="3">
+        <a ngbNavLink>Droit patrimonial des personnes </a>
+        <ng-template ngbNavContent>
+          <p class="mt-5 mx-5">Si vous êtes confronté à une difficulté à la suite d'un décès d'un proche, Maître Emilie VOGT est à votre écoute afin de vous orienter vers la procédure amiable ou contentieuse qui vous êtes la plus adaptée.
+            <br/>
+          </p>
+          <ul class="mt-5 mx-5 in">
+            <li>Successions (liquidation et partage)</li>
+            <li>Contestation d'un testament</li>
+            <li>Assistance aux expertises</li>
+          </ul>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="4">
+        <a ngbNavLink>Droit pénal</a>
+        <ng-template ngbNavContent>
+          <p class="mt-5 mx-5">Si vous êtes mis en cause ou victime, Maître Emilie VOGT vous assiste et vous représente en amont du procès et devant l'ensemble des juridictions (tribunal de police, tribunal correctionnel, cour d'assises, tribunal pour enfants).
+            <br/>
+          </p>
+          <ul class="mt-5 mx-5 in">
+            <li>Garde à vue</li>
+            <li>Audition libre</li>
+            <li>Intervention  devant le juge d'instruction (mis en examen, témoin assisté)</li>
+            <li>Défense des mineurs et des majeurs auteurs ou victimes d'infractions devant les Tribunaux et les Cours</li>
+          </ul>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="5">
+        <a ngbNavLink>Droit civil général et des contrats</a>
+        <ng-template ngbNavContent>
+          <p class="mt-5 mx-5">Si vous souhaitez engager une action à l'encontre d'un tiers qui vous aurait causé un dommage ou si vous êtes mis en cause par un tiers, Maître Emilie VOGT vous accompagne afin de mettre un terme au litige.
+            <br/>
+            Maître Emilie VOGT s'attache à trouver une solution à votre litige tant sur le plan amiable que devant le tribunal judiciaire (ancien tribunal de grande instance et ancien tribunal d'instance).
+            <br/>
+          </p>
+
+          <ul class="mt-5 mx-5 in">
+            <li>Responsabilité civile contractuelle et délictuelle</li>
+            <li>Rédaction de contrats</li>
+            <li>Intervention en cas de litige lié à l'exécution d'un contrat</li>
+            <li>Réparation des préjudices liés à l'exécution d'un contrat</li>
+            <li>Résolution ou résiliation de contrats</li>
+            <li>Clauses abusives</li>
+            <li>Réparation des préjudices causés par des tiers</li>
+            <li>Trouble du voisinage</li>
+            <li>Bail d'habitation</li>
+            <li>Assistance aux expertises</li>
+          </ul>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="6">
+        <a ngbNavLink>Procédure d'appel</a>
+        <ng-template ngbNavContent>
+          <p class="mt-5 mx-5">Maître Emilie VOGT assure la défense de vos intérêts que vous soyez appelant de la décision de première
+            instance ou intimé c'est-à-dire attrait devant la Cour d'appel.
+            <br/>
+          </p>
+        </ng-template>
+      </li>
+    </ul>
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+  </div>
+
+
+
 </div>

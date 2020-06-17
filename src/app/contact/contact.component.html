@@ -1,13 +1,17 @@
-<div class="countainer-fluid mx-3 my-5">
+<div class="countainer-fluid mx-3 my-3">
   <div class="row justify-content-center mb-3">
     <div class="d-flex ">
-      <h3>CONTACT</h3>
+      <h3 style="text-align: center;">Contact
+        <br />
+        <hr style="border-color: #084b83;width: 143px;border-bottom-width: 2px" />
+      </h3>
     </div>
   </div>
   <form (ngSubmit)="sendEmail()" #etatForm="ngForm" class="was-validated">
     <div class="form-row  ">
       <div class="form-group  col-md-6  mx-auto">
         <label for="nom">Nom *</label>
+
         <input type="text" class=" form-control is-invalid" id="nom" name="nom" [(ngModel)]="user.nom"
           #etatNom="ngModel" required>
         <div class="invalid-feedback" *ngIf="etatNom.invalid ">le nom est obligatoire</div>
@@ -17,7 +21,7 @@
         <label for="prenom">Prénom *</label>
         <input type="text" class="form-control is-invalid" name="prenom" [(ngModel)]="user.prenom" #etatprenom="ngModel"
           required>
-        <div class="invalid-feedback" *ngIf="etatprenom.invalid ">le prénom est obligatoire</div>
+        <div class="invalid-feedback" *ngIf="etatprenom.invalid ">Le prénom est obligatoire</div>
       </div>
     </div>
     <div class="form-row">
@@ -26,7 +30,7 @@
         <label for="email">Email *</label>
         <input type="email" class="form-control is-invalid" name="email" [(ngModel)]="user.email" #etatEmail="ngModel"
           required email>
-        <div class="invalid-feedback" *ngIf="etatEmail.invalid ">l'email est obligatoire</div>
+        <div class="invalid-feedback" *ngIf="etatEmail.invalid ">L'email est obligatoire</div>
       </div>
       <div class="form-group col-md-6  mx-auto">
         <label for="telephone">Télephone</label>
@@ -39,7 +43,7 @@
         <label for="message">Message *</label>
         <textarea type="text" class="form-control is-invalid" name="message" [(ngModel)]="user.message"
           #etatmessage="ngModel" required></textarea>
-        <div class="invalid-feedback" *ngIf="etatmessage.invalid">veillez saisir votre demande</div>
+        <div class="invalid-feedback" *ngIf="etatmessage.invalid">Veuillez saisir votre demande</div>
       </div>
     </div>
     <div class=" d-flex justify-content-center">
@@ -48,7 +52,7 @@
       </div>
 
       <div *ngIf="ok" class="alert alert-success" role="alert">
-        votre message a bien été envoyé :)
+        Votre message a bien été envoyé :)
       </div>
 
     </div>
@@ -77,7 +81,7 @@
     <div>
       <button class="btn btn-primary" type="button" disabled>
         <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-        Loading...
+        envoi en cours...
       </button>
     </div>
   </div>

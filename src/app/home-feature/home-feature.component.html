@@ -1,0 +1,8 @@
+<div class="countainer">
+  <div class="row mb-3">
+    <app-card-home *ngFor="let feature of features" class="col-xl-2 col-sm-4 d-flex align-items-stretch"
+    [title]="feature.title"
+    [icon]="feature.icon"
+    [id]="feature.id"></app-card-home>
+  </div>
+</div>

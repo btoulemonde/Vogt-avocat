@@ -1,0 +1,16 @@
+.navbar {
+  background-color: rgba(252, 252, 252, 0);
+  border-top: 0ch;
+  border-right: 0ch;
+  border-left: 0ch;
+  border-bottom: 1;
+  border-color: #245379;
+  border-width: 5px;
+  border-radius: 0%;
+}
+ a{
+   color: black;
+   font-weight: bold;
+ }
+
+

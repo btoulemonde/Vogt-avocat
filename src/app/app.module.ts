@@ -13,6 +13,10 @@ import { PresentationComponent } from './presentation/presentation.component';
 import {CompetencesComponent} from './competences/competences.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CardHomeComponent } from './card-home/card-home.component';
+import { HomeFeatureComponent } from './home-feature/home-feature.component';
+import { CompetenceService } from './service/conpetences.service';
+import { HonoraireComponent } from './honoraire/honoraire.component';
 
 
 const routes: Routes = [
@@ -20,6 +24,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'presentation', component: PresentationComponent},
   {path: 'domaineCompétences', component: CompetencesComponent},
+  {path: 'honoraire', component: HonoraireComponent},
   {path: '', redirectTo: 'accueil', pathMatch: 'full'}
 ];
 
@@ -33,7 +38,10 @@ const routes: Routes = [
     AccueilComponent,
     FooterComponent,
     PresentationComponent,
-    CompetencesComponent
+    CompetencesComponent,
+    CardHomeComponent,
+    HomeFeatureComponent,
+    HonoraireComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +50,10 @@ const routes: Routes = [
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [CompetenceService],
+  bootstrap: [AppComponent],
+  exports: [
+    CompetencesComponent
+  ]
 })
 export class AppModule { }

@@ -1,18 +1,36 @@
 .jumbotron {
    background-image:
- url('../../assets/image/cour2.png');
-   background-size: cover;
-   height: 100%;
-   width: 100%;
+ url('../../assets/image/cour3.jpg');
+
+    min-width: 100%;
+    height: auto;
+   background-attachment: fixed;
+   background-position: center;
+
+
 
 
   }
-  h5, h6{
+  h1, h2, h3, h4, h5, h6, p{
     font-family: Baskerville;
     color: #1a4672;
+    text-align: center;
   }
   .card{
-    background-color: rgba(190, 190, 190, 0.699);
-    width: 30rem;
+    background-color: rgba(190, 190, 190, 0.637);
+    border-width: 3px;
+    border-color: black;
+
+
+  }
+  .card-header{
+    background-color: rgba(190, 190, 190, 0.007) ;
+
+  }
+  .card-body{
+    background-color: rgba(190, 190, 190, 0.007);
+  }
+  .list-group.list-group-flush{
+    background-color: rgba(190, 190, 190, 0.007);
 
   }
