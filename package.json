@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "cross-var ng build --prod --base-href https://btoulemonde.github.io/Vogt-avocat/",
+    "build": "cross-var ng build  --base-href https://btoulemonde.github.io/Vogt-avocat/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
