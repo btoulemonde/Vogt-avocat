@@ -19,6 +19,7 @@ export class ContactComponent implements OnInit {
   constructor(private mailService: MailService, private router: Router) { }
 
   ngOnInit() {
+
   }
 
   redirection() {
