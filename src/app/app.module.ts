@@ -17,6 +17,7 @@ import { CardHomeComponent } from './card-home/card-home.component';
 import { HomeFeatureComponent } from './home-feature/home-feature.component';
 import { CompetenceService } from './service/conpetences.service';
 import { HonoraireComponent } from './honoraire/honoraire.component';
+import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,9 @@ const routes: Routes = [
   {path: 'presentation', component: PresentationComponent},
   {path: 'domaineCompétences', component: CompetencesComponent},
   {path: 'honoraire', component: HonoraireComponent},
-  {path: '', redirectTo: '/accueil', pathMatch: 'full'}
+  {path: '', redirectTo: '/accueil', pathMatch: 'full'},
+  { path: 'not-found', component: FourOhFourComponent },
+  { path: '**', redirectTo: 'not-found' }
 ];
 
 
