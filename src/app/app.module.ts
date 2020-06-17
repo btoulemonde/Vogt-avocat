@@ -25,7 +25,7 @@ const routes: Routes = [
   {path: 'presentation', component: PresentationComponent},
   {path: 'domaineCompétences', component: CompetencesComponent},
   {path: 'honoraire', component: HonoraireComponent},
-  {path: '', redirectTo: 'accueil', pathMatch: 'full'}
+  {path: '', redirectTo: '/accueil', pathMatch: 'full'}
 ];
 
 
