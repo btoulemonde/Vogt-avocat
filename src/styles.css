@@ -4293,7 +4293,8 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  border-color: #245379;
+  background-color: #24537985 ;
 }
 
 .nav-tabs .nav-link.disabled {
