@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="fr">
 <head>
+  <!--404 -->
+  <script>
+
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+
   <meta charset="utf-8">
   <title>Maître Emilie VOGT - Avocat au barreau de Montpellier</title>
   <meta name="description" content="Maître Emilie VOGT, Avocat au barreau de Montpellier intervient afin dans différents domaines tels que le droit de la réparation et du dommage corporel,
