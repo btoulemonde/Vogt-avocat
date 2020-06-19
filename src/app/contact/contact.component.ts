@@ -40,6 +40,7 @@ export class ContactComponent implements OnInit {
         error => {
 
           return this.err = true;
+          this.sending = false;
 
         });
 
