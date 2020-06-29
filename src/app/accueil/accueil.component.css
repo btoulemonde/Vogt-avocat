@@ -1,20 +1,16 @@
-.jumbotron {
-   background-image:
- url('../../assets/image/cour3.jpg');
-
-    min-width: 100%;
-    height: auto;
-   background-attachment: fixed;
-   background-position: center;
 
 
-
-
-  }
-  h1, h2, h3, h4, h5, h6, p{
+p{
+  font-size: medium;
+}
+  h1, h2, h3, h4, h5, h6, p, ul, li{
     font-family: Baskerville;
-    color: #1a4672;
+    color: #000000;
     text-align: center;
+
+    font-weight: bold;
+    margin-bottom:5px;
+
   }
   .card{
     background-color: rgba(190, 190, 190, 0.637);
