@@ -75,7 +75,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Baskerville;
+  font-family:  Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -85,7 +85,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
   text-align: justify;
-  font-family: Baskerville;
+  font-family:  Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif;
   font-size: medium;
 
 }
@@ -112,7 +112,7 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: Baskerville;
+  font-family:  Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif;
   text-justify: auto;
   text-align: justify;
 }
@@ -122,7 +122,7 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
-  font-family: Baskerville;
+  font-family:  Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif;
   font-size: medium;
 }
 
@@ -250,7 +250,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
+  font-family:  Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif;
   font-size: inherit;
   line-height: inherit;
 }

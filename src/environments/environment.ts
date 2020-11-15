@@ -5,7 +5,7 @@ import { config } from './common';
 
 export const environment = Object.assign({
   production: false,
-  baseUrl: 'https://email22.herokuapp.com/'
+  baseUrl: 'http://app-0d26f6a9-4474-4bf6-ad17-2a3cdd41aeba.cleverapps.io'
 }, config);
 
 /*
