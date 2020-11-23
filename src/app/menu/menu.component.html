@@ -1,19 +1,19 @@
 <div class="countainer-fluid">
   <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand" routerLink="/accueil">
-      <img src="/assets/image/logo.png" width="125" height="125" alt="" loading="lazy">
+    <a class="navbar-brand ml-5" routerLink="/accueil">
+      <img src="/assets/image/logo.png" width="150" height="150" alt="" loading="lazy">
     </a>
     <button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed" aria-label="Toggle navigation" (click)="collapsed = !collapsed">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse" [class.collapse]="collapsed"  id="navbarNavAltMarkup">
       <div class="navbar-nav mx-auto">
-        <a class="nav-item nav-link active mx-3" routerLinkActive="active" routerLink="/accueil">ACCUEIL  <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link mx-3" routerLinkActive="active-link" routerLink="/presentation">PRESENTATION</a>
-        <a class="nav-item nav-link mx-3" routerLinkActive="active-link" routerLink="/domaineCompétences">DOMAINES D'INTERVENTIONS</a>
+        <a class="nav-item nav-link active mx-3" routerLinkActive="active" routerLink="/accueil">Accueil<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link mx-3" routerLinkActive="active-link" routerLink="/presentation">Présentation</a>
+        <a class="nav-item nav-link mx-3" routerLinkActive="active-link" routerLink="/domaineCompétences">Domaines d'interventions</a>
 
-        <a class="nav-item nav-link mx-3" routerLinkActive="active-link" routerLink="/honoraire">HONORAIRES</a>
-        <a class="nav-item nav-link mx-3" routerLinkActive="active-link" routerLink="/contact">CONTACT</a>
+        <a class="nav-item nav-link mx-3" routerLinkActive="active-link" routerLink="/honoraire">Honoraires</a>
+        <a class="nav-item nav-link mx-3" routerLinkActive="active-link" routerLink="/contact">Contact</a>
 
       </div>
     </div>

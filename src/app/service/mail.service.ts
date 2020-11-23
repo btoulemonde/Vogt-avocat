@@ -6,7 +6,8 @@ import { Observable, throwError  } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 const url = environment.baseUrl;
 const httpOptions = {
-  headers: new HttpHeaders({'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json'})
+  headers: new HttpHeaders({'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json'}),
+  responseType: 'text' as 'json'
 
 };
 
@@ -18,6 +19,6 @@ export class MailService {
   constructor(private httpClient: HttpClient) { }
 
   sendEmail(user: User): Observable<void> {
-    return this.httpClient.post<void>(`${url}sendemail`, user, httpOptions);
+    return this.httpClient.post<void>(`${url}sendemail`, JSON.stringify(user), httpOptions);
   }
 }

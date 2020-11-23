@@ -26,9 +26,13 @@ export class ContactComponent implements OnInit {
     this.router.navigate(['/accueil']);
   }
   sendEmail() {
+    this.err = false;
+    this.ok = false;
     this.sending = true;
 
+
     this.mailService.sendEmail(this.user).subscribe(
+
         () => {
           this.ok = true;
           this.sending = false;
